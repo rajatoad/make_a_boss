@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://crqhxtspkgn3g"]
+
+[ext_resource type="Texture2D" uid="uid://cchgyc1jxs3fu" path="res://Art/Make a Boss/Gun/revolver.png" id="1_oxhxp"]
+[ext_resource type="Script" path="res://UI/weapon_slot.gd" id="1_w8rv1"]
+
+[node name="WeaponSlot" type="MarginContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -93.0
+offset_bottom = 31.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+script = ExtResource("1_w8rv1")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AmmoLabel" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 5
+text = "1"
+vertical_alignment = 1
+
+[node name="WeaponImage" type="TextureRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+texture = ExtResource("1_oxhxp")
+stretch_mode = 3

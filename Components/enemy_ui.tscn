@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://yva4yuc6clde"]
+
+[ext_resource type="Script" path="res://Character/enemy_ui.gd" id="1_koisd"]
+[ext_resource type="FontFile" uid="uid://d13syqa3stid" path="res://Minecraft.ttf" id="2_8p0yc"]
+
+[node name="Enemy UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -8.0
+offset_top = -21.0
+offset_right = 32.0
+offset_bottom = 19.0
+script = ExtResource("1_koisd")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -7.0
+offset_right = 22.0
+offset_bottom = 4.0
+theme_override_fonts/font = ExtResource("2_8p0yc")
+theme_override_font_sizes/font_size = 5

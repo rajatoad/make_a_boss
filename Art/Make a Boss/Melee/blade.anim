@@ -1,0 +1,9 @@
+<PixlyAnimation version="1.5">
+	<Info sheetWidth="448" sheetHeight="448" totalCollumns="1" totalRows="1" frameWidth="448" frameHeight="64" layerCount="1"/>
+	<Frames length="1">
+		<Frame duration="100" visible="true">
+			<Region x="0" y="0" width="448" height="64"/>
+			<Index linear="0" collumn="0" row="0"/>
+		</Frame>
+	</Frames>
+</PixlyAnimation>

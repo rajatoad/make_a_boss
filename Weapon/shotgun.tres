@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=3 format=3 uid="uid://cviafpk7qi4vx"]
+
+[ext_resource type="Script" path="res://Weapon/weapon_data.gd" id="1_yjokw"]
+[ext_resource type="Texture2D" uid="uid://76lkci406iea" path="res://Art/Make a Boss/Gun/double_barrelled_shotgun.png" id="2_aax8t"]
+
+[resource]
+script = ExtResource("1_yjokw")
+weapon_name = "shotgun"
+weapon_sprite = ExtResource("2_aax8t")
+weapon_shoot_time = 1.0
+weapon_damage = 20.0
+reload_count = 6
+reload_time = 1.0
+max_ammo = 100
+bullet_count = 3
+bullet_spread = 20
+bullet_speed = 200

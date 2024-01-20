@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ggquigor1eso"]
+
+[ext_resource type="Script" path="res://Weapon/base_weapon_component.gd" id="1_wnjs2"]
+[ext_resource type="Resource" uid="uid://cviafpk7qi4vx" path="res://Weapon/shotgun.tres" id="2_30hth"]
+
+[node name="BaseWeaponComponent" type="Node2D"]
+script = ExtResource("1_wnjs2")
+weapon_data = ExtResource("2_30hth")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.76837e-07, 0)
+scale = Vector2(0.4, 0.4)
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(6, 0)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -14.0
+offset_top = -22.0
+offset_right = 26.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 5
+text = "RELOADING"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
